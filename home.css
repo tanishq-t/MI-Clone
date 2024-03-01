@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
+/* Header Css */
 .container-fluid {
     color: black;
-    height: 60px;
+    height: 4rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -53,6 +54,8 @@ nav ul li a:hover {
     margin-right: 1.5rem;
 }
 
+
+/* Carousel css */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: black;
@@ -60,6 +63,8 @@ nav ul li a:hover {
     padding: 1.2rem;
 }
 
+
+/*Featured Products Css */
 .products{
     width: 100%;
     display: flex;
@@ -73,7 +78,7 @@ nav ul li a:hover {
 }
 
 .product-2{
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -98,21 +103,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.gallery-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f7f7f7;
-}
-
-.gallery-container div{
-    background-color: white;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 0.75rem;
-}
-
 .big-pic{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -127,7 +117,6 @@ nav ul li a:hover {
     height: 328px;
     border-radius: none;
 }
-
 
 
 .small-pic{
@@ -147,6 +136,23 @@ nav ul li a:hover {
     align-items: center;
 }
 
+/*Exclusive Offer Css*/
+.gallery-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.gallery-container div{
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.75rem;
+}
+
+
 .card-container {
     display: flex;
     flex-wrap: nowrap;
@@ -157,7 +163,7 @@ nav ul li a:hover {
 }
 
 .card {
-    width: 28rem !important;
+    width: 100% !important;
     padding: 20px;
 }
 
@@ -167,6 +173,44 @@ nav ul li a:hover {
     font-weight: 500;
 }
 
+
+@media (max-width: 340px){
+    .container-fluid nav{
+        display: none;
+    }
+
+    .big-pic{
+        display: flex;
+        flex-direction: column;
+        gap: none;
+    }
+
+    .big-pic div{
+        font-size: small;
+    }
+
+    .small-pic{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        display: none;
+    }
+
+    .product-2 div{
+        width: 100%;
+    }
+
+    .product-2{
+        padding: none;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+}
 
 
 
