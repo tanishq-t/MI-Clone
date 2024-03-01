@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Header Css */
 .container-fluid {
     color: black;
     height: 4rem;
@@ -55,7 +54,6 @@ nav ul li a:hover {
 }
 
 
-/* Carousel css */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: black;
@@ -64,7 +62,6 @@ nav ul li a:hover {
 }
 
 
-/*Featured Products Css */
 .products{
     width: 100%;
     display: flex;
@@ -136,7 +133,6 @@ nav ul li a:hover {
     align-items: center;
 }
 
-/*Exclusive Offer Css*/
 .gallery-container{
     width: 100%;
     display: flex;
@@ -173,6 +169,108 @@ nav ul li a:hover {
     font-weight: 500;
 }
 
+
+  footer {
+    background-color: black;
+    padding: 30px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #969595;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #666;
+  }
+  
+  .follow-us {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .follow-us p {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  
+  .follow-us form {
+    display: inline-block;
+  }
+  
+  .follow-us input[type="email"] {
+    padding: 8px 10px;
+    border: 1px solid #aaa7a7;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+  
+  .follow-us button {
+    padding: 8px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-icons li a i {
+    font-size: 20px;
+    color: #9b9999;
+  }
+  
+  .social-icons li a:hover i {
+    color: #007bff;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #ebe9e9;
+  }
+  
+  .footer-bottom p {
+    margin-bottom: 10px;
+    color: #3c3b3b;
+  }
+  
 
 @media (max-width: 1400px){
     .container-fluid nav{
@@ -212,5 +310,18 @@ nav ul li a:hover {
     }
 }
 
+
+@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      flex: auto;
+      margin-bottom: 10px;
+    }
+  }
+  
 
 
