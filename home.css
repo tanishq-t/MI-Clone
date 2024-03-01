@@ -174,7 +174,7 @@ nav ul li a:hover {
 }
 
 
-@media (max-width: 340px){
+@media (max-width: 1400px){
     .container-fluid nav{
         display: none;
     }
